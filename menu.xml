@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+    
+<menu id="accesories-apps-menu" label="Accesories">
+    <item label="Calculator">
+        <action name="Execute"><command>galculator</command></action>
+    </item>
+    <item label="gedit">
+        <action name="Execute"><command>gedit</command></action>
+    </item>
+    <item label="Mousepad">
+        <action name="Execute"><command>mousepad</command></action>
+    </item>
+       <item label="Htop">
+        <action name="Execute"><command>htop</command></action>
+    </item>
+       <item label="Nautilus">
+        <action name="Execute"><command>nautilus --no-desktop</command></action>
+    </item>
+</menu>
+
+<menu id="graphics-apps-menu" label="Graphics">
+    <item label="GIMP">
+        <action name="Execute"><command>gimp</command></action>
+    </item>
+</menu>
+
+<menu id="multimedia-apps-menu" label="Multimedia">
+    <item label="VLC">
+        <action name="Execute"><command>vlc</command></action>
+    </item>
+    <item label="DeaDBeeF">
+        <action name="Execute"><command>deadbeef</command></action>
+    </item>
+    <item label="mkvtoolnix">
+        <action name="Execute"><command>mkvtoolnix-gui</command></action>
+    </item>
+    <item label="Smplayer">
+        <action name="Execute"><command>smplayer</command></action>
+    </item>
+    <item label="Mplayer">
+        <action name="Execute"><command>mymplayer</command></action>
+    </item>
+</menu>
+
+<menu id="apps-menu" label="Applications">
+    <menu id="accesories-apps-menu" />
+    <menu id="graphics-apps-menu" />
+    <menu id="multimedia-apps-menu" />
+    <menu id="network-apps-menu" />
+</menu>
+
+<menu id="config-menu" label="Config">
+    <item label="Change GTK Theme">
+        <action name="Execute"><command>gtk-chtheme</command></action>
+    </item>
+     <item label="Change Look">
+        <action name="Execute"><command>lxappearance</command></action>
+    </item>
+    <item label="OB Config">
+        <action name="Execute"><command>obconf</command></action>
+    </item>
+    <item label="Wallpapers">
+        <action name="Execute"><command>nitrogen</command></action>
+    </item>
+</menu>
+
+<menu id="exit-menu" label="Exit">
+	<item label="Log Out">
+		<action name="Execute">
+			<command>openbox --exit</command>
+		</action>
+	</item>
+<item label="Lock">
+<action name="Execute"> <execute>xlock</execute> </action></item>
+	<item label="Shutdown">
+		<action name="Execute">
+			<command>systemctl poweroff</command>
+		</action>
+	</item>
+	<item label="Restart">
+		<action name="Execute">
+		        <command>systemctl reboot</command>
+		</action>
+	</item>
+	<item label="Suspend">
+		<action name="Execute">
+		        <command>systemctl suspend</command>
+		</action>
+	</item>
+	<item label="Hibernate">
+		<action name="Execute">
+		        <command>systemctl hibernate</command>
+		</action>
+	</item>
+</menu>
+    
+<menu id="root-menu" label="OpenBox 3">
+    <separator label=":: мσнsεη sнαүαη" />
+        <item label="Terminal">
+            <action name="Execute"><command>xfce4-terminal</command></action>
+        </item>
+        <item label="Firefox">
+            <action name="Execute"><command>firefox</command></action>
+        </item>
+        <item label="uGet">
+            <action name="Execute"><command>uget-gtk</command></action>
+        </item>
+        <item label="Thunderbird">
+            <action name="Execute"><command>thunderbird</command></action>
+        </item>
+        <item label="Thunar">
+            <action name="Execute"><command>Thunar</command></action>
+        </item>
+    
+        <menu id="apps-menu"/>
+        <menu id="config-menu"/>
+        <menu id="client-list-menu"/>
+        <menu id="exit-menu"/>
+</menu>
+
+</openbox_menu>
