@@ -1,0 +1,32 @@
+#!/bin/bash
+# twitter.com/m0sen70
+
+while [ "1" == "1" ];do
+sleep 1
+case "$(systemctl status smbd.socket | grep 'active')" in
+  *dead*)
+  echo "Share Status: (OFF)"
+read -r -p "Active Share? [y/N] " active
+case $active in
+    [yY][eE][sS]|[yY]) 
+        systemctl start smbd.socket
+        ;;
+    *)
+        exit 0
+        ;;
+esac
+  ;;
+  *listening*)
+  echo "Share Status: (ON)"
+  read -r -p "Stop Share? [y/N] " stop
+case $stop in
+    [yY][eE][sS]|[yY]) 
+	systemctl stop smbd.socket
+        ;;
+    *)
+        exit 0 
+        ;;
+esac
+  ;;
+esac
+done
