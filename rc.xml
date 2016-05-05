@@ -43,7 +43,7 @@
   </placement>
   <theme>
     <name>Arc-Dark</name>
-    <titleLayout>DLIC</titleLayout>
+    <titleLayout>LIC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -114,10 +114,8 @@
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
        during a session
-
        these are default values to use when other ones are not already set
        by other applications, or saved in your session
-
        use obconf if you want to change these without having to log out
        and back in -->
     <number>2</number>
@@ -166,7 +164,7 @@
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Vertical</direction>
     <!-- 'Vertical' or 'Horizontal' -->
-    <autoHide>no</autoHide>
+    <autoHide>yes</autoHide>
     <hideDelay>300</hideDelay>
     <!-- in milliseconds (1000 = 1 second) -->
     <showDelay>300</showDelay>
@@ -255,6 +253,21 @@
     <keybind key="A-Escape">
       <action name="Execute">
         <execute>xdotool getwindowfocus windowkill</execute>
+      </action>
+    </keybind>
+     <keybind key="W-T">
+      <action name="Execute">
+        <execute>urxvt</execute>
+      </action>
+    </keybind>
+    <keybind key="W-S">
+      <action name="Execute">
+        <execute>urxvt -e 'share'</execute>
+      </action>
+    </keybind>
+     <keybind key="W-F">
+      <action name="Execute">
+        <execute>firefox</execute>
       </action>
     </keybind>
     <keybind key="A-space">
@@ -680,6 +693,7 @@
     <middle>no</middle>
     <!-- center submenus vertically about the parent entry -->
     <submenuShowDelay>100</submenuShowDelay>
+    <applicationIcons>yes</applicationIcons>
     <!-- time to delay before showing a submenu after hovering over the parent
        entry.
        if this is a negative value, then the delay is infinite and the
@@ -700,7 +714,6 @@
   # own rules, but without the comments of course.
   # you may use one or more of the name/class/role/title/type rules to specify
   # windows to match
-
   <application name="the window's _OB_APP_NAME property (see obxprop)"
               class="the window's _OB_APP_CLASS property (see obxprop)"
           groupname="the window's _OB_APP_GROUP_NAME property (see obxprop)"
@@ -711,27 +724,19 @@
                       (if unspecified, then it is 'dialog' for child windows)">
   # you may set only one of name/class/role/title/type, or you may use more
   # than one together to restrict your matches.
-
   # the name, class, role, and title use simple wildcard matching such as those
   # used by a shell. you can use * to match any characters and ? to match
   # any single character.
-
   # the type is one of: normal, dialog, splash, utility, menu, toolbar, dock,
   #    or desktop
-
   # when multiple rules match a window, they will all be applied, in the
   # order that they appear in this list
-
-
     # each rule element can be left out or set to 'default' to specify to not 
     # change that attribute of the window
-
     <decor>yes</decor>
     # enable or disable window decorations
-
     <shade>no</shade>
     # make the window shaded when it appears, or not
-
     <position force="no">
       # the position is only used if both an x and y coordinate are provided
       # (and not set to 'default')
@@ -748,7 +753,6 @@
       # specifies the monitor in a xinerama setup.
       # 1 is the first head, or 'mouse' for wherever the mouse is
     </position>
-
     <size>
       # the size to make the window.
       <width>20</width>
@@ -758,35 +762,26 @@
       # appears on.
       <height>30%</height>
     </size>
-
     <focus>yes</focus>
     # if the window should try be given focus when it appears. if this is set
     # to yes it doesn't guarantee the window will be given focus. some
     # restrictions may apply, but Openbox will try to
-
     <desktop>1</desktop>
     # 1 is the first desktop, 'all' for all desktops
-
     <layer>normal</layer>
     # 'above', 'normal', or 'below'
-
     <iconic>no</iconic>
     # make the window iconified when it appears, or not
-
     <skip_pager>no</skip_pager>
     # asks to not be shown in pagers
-
     <skip_taskbar>no</skip_taskbar>
     # asks to not be shown in taskbars. window cycling actions will also
     # skip past such windows
-
     <fullscreen>yes</fullscreen>
     # make the window in fullscreen mode when it appears
-
     <maximized>true</maximized>
     # 'Horizontal', 'Vertical' or boolean (yes/no)
   </application>
-
   # end of the example
 -->
   </applications>
