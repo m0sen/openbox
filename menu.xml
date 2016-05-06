@@ -1,66 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 	<menu id="accesories-apps-menu" label="Accesories">
-		<item label="URxvt">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/terminal.png" label="URxvt">
 			<action name="Execute">
 				<execute>urxvt</execute>
 			</action>
 		</item>
-		<item label="Calculator">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/calculator.png" label="Calculator">
 			<action name="Execute">
 				<command>galculator</command>
 			</action>
 		</item>
-		<item label="gedit">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/gedit-icon.png" label="gedit">
 			<action name="Execute">
 				<command>gedit</command>
 			</action>
 		</item>
-		<item label="Mousepad">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/mousepad.png" label="Mousepad">
 			<action name="Execute">
 				<command>mousepad</command>
 			</action>
 		</item>
-		<item label="Htop">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/htop.png" label="Htop">
 			<action name="Execute">
-				<command>htop</command>
+				<command>urxvt -e 'htop'</command>
 			</action>
 		</item>
-		<item label="Nautilus">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/nautilus.png" label="Nautilus">
 			<action name="Execute">
 				<command>nautilus --no-desktop</command>
 			</action>
 		</item>
 	</menu>
 	<menu id="graphics-apps-menu" label="Graphics">
-		<item label="GIMP">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/gimp.png" label="GIMP">
 			<action name="Execute">
 				<command>gimp</command>
 			</action>
 		</item>
+		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="Darktable">
+			<action name="Execute">
+				<command>darktable</command>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Masalla/apps/24x24/rawtherapee.png" label="RawTherapee">
+			<action name="Execute">
+				<command>rawtherapee</command>
+			</action>
+		</item>
 	</menu>
 	<menu id="multimedia-apps-menu" label="Multimedia">
-		<item label="VLC">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/vlc.png" label="VLC">
 			<action name="Execute">
 				<command>vlc</command>
 			</action>
 		</item>
-		<item label="DeaDBeeF">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/deadbeef.png" label="DeaDBeeF">
 			<action name="Execute">
 				<command>deadbeef</command>
 			</action>
 		</item>
-		<item label="mkvtoolnix">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/totem.png" label="mkvtoolnix">
 			<action name="Execute">
 				<command>mkvtoolnix-gui</command>
 			</action>
 		</item>
-		<item label="Smplayer">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/smplayer.png" label="Smplayer">
 			<action name="Execute">
 				<command>smplayer</command>
 			</action>
 		</item>
-		<item label="Mplayer">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/mplayer.png" label="Mplayer">
 			<action name="Execute">
 				<command>mymplayer</command>
 			</action>
@@ -70,25 +80,24 @@
 		<menu id="accesories-apps-menu"/>
 		<menu id="graphics-apps-menu"/>
 		<menu id="multimedia-apps-menu"/>
-		<menu id="network-apps-menu"/>
 	</menu>
 	<menu id="config-menu" label="Config">
-		<item label="Change GTK Theme">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="Change GTK Theme">
 			<action name="Execute">
 				<command>gtk-chtheme</command>
 			</action>
 		</item>
-		<item label="Search">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="Search">
 			<action name="Execute">
 				<execute>synapse</execute>
 			</action>
 		</item>
-		<item label="Menu Editor">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/menulibre.png" label="Menu Editor">
 			<action name="Execute">
 				<execute>obmenu</execute>
 			</action>
 		</item>
-		<item label="OB Config">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="OB Config">
 			<action name="Execute">
 				<command>obconf</command>
 			</action>
@@ -127,38 +136,37 @@
 		</item>
 	</menu>
 	<menu id="root-menu" label="OpenBox 3">
-		<separator label=":: мσнsεη sнαүαη"/>
-		<item label="Terminal">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/terminal.png" label="Terminal">
 			<action name="Execute">
 				<command>urxvt</command>
 			</action>
 		</item>
-		<item label="Firefox">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/firefox.png" label="Firefox">
 			<action name="Execute">
 				<command>firefox</command>
 			</action>
 		</item>
-		<item label="Chromium">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/chromium.png" label="Chromium">
 			<action name="Execute">
 				<execute>chromium</execute>
 			</action>
 		</item>
-		<item label="CoreBird">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/twitter.png" label="CoreBird">
 			<action name="Execute">
 				<execute>proxychains corebird</execute>
 			</action>
 		</item>
-		<item label="uGet">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/uget.png" label="uGet">
 			<action name="Execute">
 				<command>uget-gtk</command>
 			</action>
 		</item>
-		<item label="Thunderbird">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/thunderbird.png" label="Thunderbird">
 			<action name="Execute">
 				<command>thunderbird</command>
 			</action>
 		</item>
-		<item label="Thunar">
+		<item icon="/usr/share/icons/Masalla/apps/24x24/thunar.png" label="Thunar">
 			<action name="Execute">
 				<command>Thunar</command>
 			</action>
