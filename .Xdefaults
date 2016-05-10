@@ -1,18 +1,15 @@
-Xft.dpi:                                       96 
-Xft.antialias:                                  true
-Xft.rgba:                                       rgb
-Xft.hinting:                                    true
-Xft.hintstyle:                                  hintslight
-
-URxvt.url-launcher:      /usr/bin/firefox
-URxvt.matcher.button:   1
-
+Xft.autohint:           true
+Xft.antialias:          true
+Xft.hinting:            true
+Xft.hintstyle:          hintslight
+Xft.dpi: 96
+Xft.rgba:               rgb
+Xft.lcdfilter:          lcddefault
 
 URxvt.depth: 32
 URxvt.saveLines: 12000
 !URxvt.background: [85]#000000
-
-URxvt*geometry:                                 80x25
+URxvt*geometry:                                 98x25
 URxvt*borderLess:                               false
 URxvt*scrollBar:                                false
 URxvt*cursorBlink:                              true
@@ -22,8 +19,8 @@ URxvt*font: xft:Inconsolata:style=Regular:pixelsize=14:antialias=true
 URxvt.underlineURLs:                            true
 URxvt.url-select.launcher:                      /usr/bin/firefox
 URxvt.url-select.underline:                     true
-URxvt*keysym.Home: \033[1~
-URxvt*keysym.End: \033[4~
+URxvt.matcher.button:   1
+
 
 *cursorColor:                         #17F018
 *VT100.colorBDMode:                   true
@@ -37,3 +34,29 @@ URxvt*keysym.End: \033[4~
 URxvt.keysym.Shift-Control-V: perl:clipboard:paste
 URxvt.iso14755: False
 URxvt.perl-ext-common: default,clipboard
+
+
+!black
+*color0: #222222
+*color8: #666666
+!red
+*color1:     #E84F4F
+*color9:     #D23D3D
+!yellow
+*color3:     #E1AA5D
+*color11:    #F39D21
+!blue
+*color4:     #ff9800
+*color12:    #00bcd4
+!magenta
+*color5:     #9B64FB
+*color13:    #8542FF
+!cyan
+*color6:     #6D878D
+*color14:    #42717B
+!green
+*color2:     #303030
+*color10:    #4caf50
+!white
+*color7: #DDDDDD
+*color15: #CCCCCC
