@@ -1,13 +1,38 @@
+####################
+# general settings #
+####################
 nojoystick='yes'
+lavdopts=threads=2
+stop-xscreensaver=yes
+really-quiet=1
+identify='1'
+
+##################
+# video settings #
+##################
 monitoraspect='16:9'
+zoom=yes
 framedrop='1'
+hardframedrop='0'
 double='yes'
 vo='xv'
-ao='pulse'
-font='XM Yekan'
-ass='true'
-flip-hebrew='no'
 geometry='50%:50%'
-subfont-text-scale='6'
-subpos='90'
+
+##################
+# audio settings #
+##################
+ao='pulse'
+
+#####################
+# subtitle settings #
+#####################
+font='ubvazir'
+subfont-text-scale='3'
+subfont-osd-scale='2'
+subfont-blur='1'
+sub-bg-alpha='120'
+sub-bg-color='10'
+subpos='96'
 subalign='2'
+ffactor='0'
+osdlevel='0'
