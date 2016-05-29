@@ -1,0 +1,105 @@
+##############################################
+#  Settings
+##############################################
+background yes
+use_xft yes
+xftfont AvantGarde LT Medium:size=8
+xftalpha 1
+update_interval 1.0
+total_run_times 0
+own_window yes
+own_window_transparent no
+own_window_type desktop
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+double_buffer yes
+minimum_size 300 300
+maximum_width 180
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders no
+default_color 28a096
+default_shade_color 000000
+default_outline_color d9d7d6
+alignment middle_right
+gap_x 20
+gap_y 0
+no_buffers yes
+uppercase no
+cpu_avg_samples 2
+override_utf8_locale yes
+update_interval 1.0
+color1 80cbc4
+color2 ffb300
+color3 f92672
+color4 29b6f6
+##############################################
+#  Output
+##############################################
+own_window_argb_value 153
+own_window_argb_visual yes
+own_window_colour 0A0A0A
+
+TEXT
+${color #d1d1d1}SYSTEM INFORMATION $hr${color}
+Host:$alignr$nodename
+Kernel:$alignr$kernel
+Uptime:$alignr$uptime
+RAM:$alignr$memperc% / $mem
+Swap usage:$alignr$swap/$swapmax
+Time:$alignr${time %I:%M %p}
+Date:$alignr${exec date +%F}
+Shamsi Date:${color1}$alignr${exec jdate +%F}${color}
+
+${color #d1d1d1}Tehran Weather $hr${color}
+${execi 300 curl -s "https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20weather.forecast%20where%20woeid%3D2251945%20and%20u%3D%27c%27&format=xml&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys" -o ~/.cache/weather.xml}Temperature:${color4}$alignr${execi 300 grep "yweather:condition" ~/.cache/weather.xml | grep -o "temp=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*"}°C${color}
+Wind:${color4}$alignr${execi 300 grep "yweather:wind" ~/.cache/weather.xml |  grep -o "speed=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*" | grep -o "[^\km/h]*"} km/h${color}
+Humidity:${color4}$alignr${execi 300 grep "yweather:atmosphere" ~/.cache/weather.xml | grep -o "humidity=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*"}%${color}
+
+${color #d1d1d1}NETWORK $hr${color}
+Gateway:$alignr$gw_ip
+Local IP: $alignr ${addr eno1}
+Public IP: $alignr ${execi 1800 curl ipinfo.io/ip}
+Public City: $alignr ${execi 1800 curl ipinfo.io/city}
+Tor IP: $alignr ${execi 60 torify curl ipinfo.io/ip}
+Tor Country: $alignr ${execi 60 torify curl ipinfo.io/country}
+Download: ${color #61d906}$alignr ${downspeed eno1}${alignr} , ${totaldown eno1}
+${downspeedgraph eno1 8}${color}
+Upload: ${color #2196f3}$alignr   ${upspeed eno1}${alignr} , ${totalup eno1}
+${upspeedgraph eno1 8}${color}
+
+${color #d1d1d1}CPU $hr${color}
+CPU Frequency:${color #80cbc4}$alignr$freq_g${color}
+CPU usage:${color #80cbc4}$alignr${cpu cpu0}%${color}
+CPU Temp: ${color3}$alignr${execi 60 sensors | sed -n '/Core 0/{s/.*:[ ]*+\([0-9]*\).*/\1/p}'}°C 
+$cpugraph
+$cpubar${color}
+
+${color #d1d1d1}HDD $hr${color}
+Filesystem Space Left:
+/$alignr${fs_used /}/${fs_size /}
+${color2}$fs_bar${color}
+~/m0sen$alignr${fs_used /home/m0sen}/${fs_size /home/m0sen}
+${color2}${fs_bar /home/m0sen}${color}
+
+${color #d1d1d1}MEMORY & I/O $hr${color}
+Memory Usage:$alignr$mem / $memfree
+$memgraph
+Disk I/O:$alignr$diskio
+$diskiograph
+
+${color #d1d1d1}TOP PROCESSES $hr${color}
+${top name 1}$alignr${top cpu 1}%
+${top name 2}$alignr${top cpu 2}%
+${top name 3}$alignr${top cpu 3}%
+${top name 4}$alignr${top cpu 4}%
+${top name 5}$alignr${top cpu 5}%
+---
+${top_io name 1}$alignr${top_io io_perc 1}%
+${top_io name 2}$alignr${top_io io_perc 2}%
+${top_io name 3}$alignr${top_io io_perc 3}%
+---
+${top_mem name 1}$alignr${top_mem mem 1}%
+${top_mem name 2}$alignr${top_mem mem 2}%
+${top_mem name 3}$alignr${top_mem mem 3}%
+
