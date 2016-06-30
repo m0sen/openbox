@@ -1,0 +1,63 @@
+! Xcursor --------------------------------------------------------------------
+
+!Cursor
+Xcursor.theme: Paper
+Xcursor.size: 22
+
+! Xft settings ---------------------------------------------------------------
+
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.rgba:       rgb
+Xft.hinting:    true
+Xft.hintstyle:  hintslight
+
+! Urxvt -----------------------------------------------------------------------
+
+URxvt*depth: 32
+URxvt*saveLines: 12000
+URxvt*background: [95]#272822
+URxvt*foreground: #f8f8f2
+URxvt*geometry:                                 125x25
+URxvt*borderLess:                               false
+URxvt*scrollBar:                                false
+URxvt*cursorBlink:                              true
+URxvt*cursorUnderline:                          false
+URxvt*scrollColor:                              #151515
+URxvt*font: xft:Inconsolata:style=Regular:pixelsize=14:antialias=true
+URxvt*underlineURLs:                            true
+URxvt*url-select.launcher:                      /usr/bin/firefox
+URxvt*url-select.underline:                     true
+URxvt*matcher.button:   1
+URxvt*colorBD:            #ffffff
+URxvt*cursorColor:        #F8F8F0
+URxvt*cursorColor2:       #F8F8F0
+URxvt*iconFile:            /usr/share/icons/Paper/24x24/apps/terminal.png
+URxvt*keysym.Shift-Control-V: perl:clipboard:paste
+URxvt*iso14755: False
+URxvt*perl-ext-common: default,clipboard
+
+!black
+*color0:    #272822
+*color8:    #75715e
+!red
+*color1:    #f92672
+*color9:    #d00246
+!green
+*color2:    #61d906
+*color10:   #a6e22e
+!yellow
+*color3:    #f4bf75
+*color11:   #f4bf75
+!blue
+*color4:    #09444e
+*color12:   #66d9ef
+!magenta
+*color5:    #ab81ff
+*color13:   #ab81ff
+!cyan
+*color6:    #9befe3
+*color14:   #9befe3
+!white
+*color7:    #f8f8f2
+*color15:   #f8f8f2

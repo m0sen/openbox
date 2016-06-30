@@ -1,78 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 	<menu id="accesories-apps-menu" label="Accesories">
-		<item icon="/usr/share/icons/Masalla/apps/24x24/terminal.png" label="URxvt">
-			<action name="Execute">
-				<execute>urxvt</execute>
-			</action>
-		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/calculator.png" label="Calculator">
+		<item icon="/usr/share/icons/Paper/24x24/apps/calc.png" label="Calculator">
 			<action name="Execute">
 				<command>galculator</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/gedit-icon.png" label="gedit">
-			<action name="Execute">
-				<command>gedit</command>
-			</action>
-		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/mousepad.png" label="Mousepad">
+		<item icon="/usr/share/icons/Paper/24x24/apps/text-editor.png" label="Mousepad">
 			<action name="Execute">
 				<command>mousepad</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/htop.png" label="Htop">
+		<item icon="/usr/share/icons/Paper/24x24/apps/htop.png" label="Htop">
 			<action name="Execute">
 				<command>urxvt -e 'htop'</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/nautilus.png" label="Nautilus">
+		<item icon="/usr/share/icons/Paper/24x24/apps/nautilus.png" label="Nautilus">
 			<action name="Execute">
-				<command>nautilus --no-desktop</command>
+				<command>nautilus</command>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/terminal.png" label="Terminix">
+			<action name="Execute">
+				<execute>terminix</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/transmission.png" label="Transmission">
+			<action name="Execute">
+				<execute>transmission-gtk</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/virtualbox.png" label="VirtualBox">
+			<action name="Execute">
+				<execute>virtualbox</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/terminal.png" label="URxvt">
+			<action name="Execute">
+				<execute>urxvt</execute>
 			</action>
 		</item>
 	</menu>
 	<menu id="graphics-apps-menu" label="Graphics">
-		<item icon="/usr/share/icons/Masalla/apps/24x24/gimp.png" label="GIMP">
+		<item icon="/usr/share/icons/Paper/24x24/apps/gimp.png" label="GIMP">
 			<action name="Execute">
 				<command>gimp</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="Darktable">
+		<item icon="/usr/share/icons/Paper/24x24/apps/darktable.png" label="Darktable">
 			<action name="Execute">
 				<command>darktable</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/rawtherapee.png" label="RawTherapee">
+		<item icon="/usr/share/icons/Paper/24x24/apps/rawtherapee.png" label="RawTherapee">
 			<action name="Execute">
 				<command>rawtherapee</command>
 			</action>
 		</item>
-	</menu>
-	<menu id="multimedia-apps-menu" label="Multimedia">
-		<item icon="/usr/share/icons/Masalla/apps/24x24/vlc.png" label="VLC">
+		<item icon="/usr/share/icons/Paper/24x24/apps/openshot.png" label="OpenShot">
 			<action name="Execute">
-				<command>vlc</command>
+				<execute>openshot</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/deadbeef.png" label="DeaDBeeF">
+		<item icon="/usr/share/icons/Paper/24x24/apps/blender.png" label="Blender">
+			<action name="Execute">
+				<execute>blender</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="multimedia-apps-menu" label="Multimedia">
+		<item icon="/usr/share/icons/Paper/24x24/apps/deadbeef.png" label="DeaDBeeF">
 			<action name="Execute">
 				<command>deadbeef</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/totem.png" label="mkvtoolnix">
+		<item icon="/usr/share/icons/Paper/24x24/apps/clementine.png" label="Clementine">
+			<action name="Execute">
+				<execute>clementine</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/vlc.png" label="VLC">
+			<action name="Execute">
+				<command>vlc</command>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/totem.png" label="mkvtoolnix">
 			<action name="Execute">
 				<command>mkvtoolnix-gui</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/smplayer.png" label="Smplayer">
+		<item icon="/usr/share/icons/Paper/24x24/apps/hb-icon.png" label="HandBrake">
+			<action name="Execute">
+				<execute>ghb</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/smplayer.png" label="Smplayer">
 			<action name="Execute">
 				<command>smplayer</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/mplayer.png" label="Mplayer">
+		<item icon="/usr/share/icons/Paper/24x24/apps/mplayer.png" label="Mplayer">
 			<action name="Execute">
 				<command>mymplayer</command>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/kodi.png" label="Kodi media center">
+			<action name="Execute">
+				<execute>kodi</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="developer-apps-menu" label="Developer">
+		<item icon="/usr/share/icons/Paper/24x24/apps/brackets.png" label="Brackets">
+			<action name="Execute">
+				<execute>brackets</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/vim.png" label="VIM">
+			<action name="Execute">
+				<execute>urxvt -e 'vim'</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/gedit-icon.png" label="gedit">
+			<action name="Execute">
+				<command>gedit</command>
+			</action>
+		</item>
+	</menu>
+	<menu id="system-apps-menu" label="System">
+		<item icon="/usr/share/icons/Paper/24x24/apps/baobab.png" label="Baobab">
+			<action name="Execute">
+				<execute>baobab</execute>
+			</action>
+		</item>
+		<item icon="bleachbit.png" label="BleachBit">
+			<action name="Execute">
+				<execute>bleachbit</execute>
+			</action>
+		</item>
+		<item icon="/usr/share/icons/Paper/24x24/apps/gparted.png" label="GParted HD">
+			<action name="Execute">
+				<execute>gksu gparted</execute>
 			</action>
 		</item>
 	</menu>
@@ -80,24 +149,26 @@
 		<menu id="accesories-apps-menu"/>
 		<menu id="graphics-apps-menu"/>
 		<menu id="multimedia-apps-menu"/>
+		<menu id="developer-apps-menu"/>
+		<menu id="system-apps-menu"/>
 	</menu>
 	<menu id="config-menu" label="Config">
-		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="Change GTK Theme">
+		<item label="Change GTK Theme">
 			<action name="Execute">
 				<command>gtk-chtheme</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="Search">
+		<item label="Search">
 			<action name="Execute">
 				<execute>synapse</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/menulibre.png" label="Menu Editor">
+		<item label="Menu Editor">
 			<action name="Execute">
 				<execute>obmenu</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/darktable.png" label="OB Config">
+		<item label="OB Config">
 			<action name="Execute">
 				<command>obconf</command>
 			</action>
@@ -116,17 +187,17 @@
 		</item>
 		<item label="Shutdown">
 			<action name="Execute">
-				<command>systemctl poweroff</command>
+				<command>sudo shutdown</command>
 			</action>
 		</item>
 		<item label="Restart">
 			<action name="Execute">
-				<command>systemctl reboot</command>
+				<command>sudo reboot</command>
 			</action>
 		</item>
 		<item label="Suspend">
 			<action name="Execute">
-				<command>systemctl suspend</command>
+				<command>sudo suspend</command>
 			</action>
 		</item>
 		<item label="Hibernate">
@@ -136,37 +207,37 @@
 		</item>
 	</menu>
 	<menu id="root-menu" label="OpenBox 3">
-		<item icon="/usr/share/icons/Masalla/apps/24x24/terminal.png" label="Terminal">
+		<item icon="/usr/share/icons/Paper/24x24/apps/terminal.png" label="Terminal">
 			<action name="Execute">
 				<command>urxvt</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/firefox.png" label="Firefox">
+		<item icon="/usr/share/icons/Paper/24x24/apps/firefox.png" label="Firefox">
 			<action name="Execute">
 				<command>firefox</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/chromium.png" label="Chromium">
+		<item icon="/usr/share/icons/Paper/24x24/apps/chromium.png" label="Chromium">
 			<action name="Execute">
 				<execute>chromium</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/twitter.png" label="CoreBird">
+		<item icon="/usr/share/icons/Paper/24x24/apps/corebird.png" label="CoreBird">
 			<action name="Execute">
 				<execute>proxychains corebird</execute>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/uget.png" label="uGet">
+		<item icon="/usr/share/icons/Paper/24x24/apps/uget.png" label="uGet">
 			<action name="Execute">
 				<command>uget-gtk</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/thunderbird.png" label="Thunderbird">
+		<item icon="/usr/share/icons/Paper/24x24/apps/thunderbird.png" label="Thunderbird">
 			<action name="Execute">
 				<command>thunderbird</command>
 			</action>
 		</item>
-		<item icon="/usr/share/icons/Masalla/apps/24x24/thunar.png" label="Thunar">
+		<item icon="/usr/share/icons/Paper/24x24/apps/thunar.png" label="Thunar">
 			<action name="Execute">
 				<command>Thunar</command>
 			</action>
